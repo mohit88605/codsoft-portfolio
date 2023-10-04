@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: none;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+html{
+    font-size: 90%;
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    color: #fff;
+    text-decoration: none;  
+    font-size: 2rem;
+    margin-top: 0.8rem;
+    margin-left: 4rem;
+    font-weight: 700;
+    cursor: pointer;
+}.navbar{
+    margin-left: 35rem;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+    cursor: pointer ;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+.navbar a:hover{
+    color: rgb(242, 115, 5);
+    text-decoration: underline;
+}
+#menu{
+    display: none;
+    font-size: 1.5rem;
+}
+section{
+    min-height: 100vh;
+    /* max-width:600px; */
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-detail h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.home-detail h1{
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 1;
+    margin: -3px 0;
+}
+.home-detail p{
+    font-size: 0.8rem;
+    opacity: 1;
+    /* text-align: justify; */
+}
+.social-media a{
+    display:inline-flex;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    color: rgb(242, 115, 5);
+    border: 2px solid rgb(242, 115, 5);
+    border-radius: 50%;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    transition: 0.5 ease;
+}
+.home-detail h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+.social-media a:hover,.social-media a.active{
+    background: rgb(242, 115, 5);
+    color: #000;
+    box-shadow: 0 0 20px rgb(242, 115, 5);
+}
+span{
+    color: rgb(242, 115, 5);
+}
+ .btn{
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid rgb(242, 115, 5);
+    background-color: rgb(242, 115, 5);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: 0.5 ease;
+}
+.btn:hover{
+    background:#000;
+    color: rgb(242, 115, 5);
+    box-shadow: 0 0 20px rgb(242, 115, 5);
+}
+.home .home-img img{
+    width: 30vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 15rem;
+}
+.home .home-img img:hover{
+    border: 5px solid orange;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.about-img img{
+    width: 18vw;
+    margin-left: 10rem;
+    border-radius: 20px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+}
+.about-sec{
+    margin-right: 4rem;
+}
+.about-sec p{
+    margin: 2rem 0 3rem 2rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #ef6e12;
+}
+.about-sec a{
+    padding: 8px;
+    letter-spacing: 0;
+    color: #000;
+    text-decoration: none;
+    margin-left: 5rem;
+}
+.about-sec h2{
+    margin-top: -5rem;
+}
+.about-sec h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.about-heading{
+    text-align: center;
+    font-size: 4rem;
+}
+/* .service-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+} */
+
+.skills{ 
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+    margin-top: -6rem;
+}
+.skill-main{
+    width: 100%;
+    display: grid;
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-column-gap: 7rem;
+    grid-row-gap: 7rem;
+    margin-top: 5rem;
+}
+.skill-main .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.skill-bar .bar{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(86, 85, 85, 0.399);
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #ef6e12;
+    border-radius: 20px; 
+}
+.skill-bar .bar .percentage{
+    font-weight: 900;
+}
+.skill-bar .bar .html{
+    width: 90%;
+    animation: html 8s;
+}
+@keyframes html {
+    0%{
+        width: 0%
+    }100%{
+        width: 90%
+    }
+}
+.skill-bar .bar .css{
+    width: 85%;
+    animation: css 8s;
+}
+@keyframes css {
+    0%{
+        width: 0%
+    }100%{
+        width: 85%
+    }
+}
+.skill-bar .bar .js{
+    width: 80%;
+    animation: js 8s;
+}
+@keyframes js {
+    0%{
+        width: 0%
+    }100%{
+        width: 80%
+    }
+}
+.skill-bar .bar .react{
+    width: 80%;
+    animation: react 8s;
+}
+@keyframes react {
+    0%{
+        width: 0%
+    }100%{
+        width: 80%
+    }
+}
+
+
+
+
+
+.contact h2{
+    margin-bottom: 5rem;
+}
+.contact form{
+    text-align: center;
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form input , textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #111;
+    border-radius: 0.8rem;
+    gap: 3rem;
+    margin: 0.8rem 0;
+}
+form input{
+    width: 49%;
+}
+textarea{
+    resize: none;
+}
+form .btn{
+   color: black;
+   height: 65px;
+}
